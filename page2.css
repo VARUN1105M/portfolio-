@@ -1,0 +1,290 @@
+/* .underline{
+    margin-right: 90%;
+    border: 2px solid grey;
+} */
+/* .underline1{
+    margin-right: 30%;
+    border-radius: 25px;
+    border: 2px solid grey;
+} */ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    font-family:  "Poppins", sans-serif;
+}
+.navbar {
+  background-color: white;
+}
+.navbar-nav .nav-link h5 {
+  color: black;
+  margin: 0;
+  padding-right: 10px;
+}
+.navbar-nav .nav-link:hover h5 {
+  color: #007bff; /* Change to your desired hover color */
+}
+.navbar-nav .say-hello h5 {
+  border: 2px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.navbar-nav .say-hello:hover h5 {
+  color: #007bff; /* Change to your desired hover color */
+  border-color: #007bff; /* Change to your desired hover color */
+}
+.navbar-toggler {
+  border-color: #007bff; /* Border color of the toggler button */
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,123,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.fa-solid{
+    font-size:10vh;
+    font-weight: bolder;
+}
+.clearfix{
+    clear: both;
+}
+.underline::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -2px;
+    background: #0d6efd;
+}
+.progress{
+    height: 8px;
+}
+.center-text {
+  position: relative; /* Ensure text is positioned relatively within its container */
+  z-index: 1; /* Make sure the text appears above the pseudo-element */
+}
+.scriptingcolor{
+  z-index: 2;
+}
+.no-padding-margin::before {
+  content: '';
+  position: absolute;
+  top: 50%; /* Vertically center the pseudo-element */
+  left: 0;
+  right: 0;
+  height: 30%; /* Adjust height as needed */
+  background-color: #007bff; /* Adjust color and opacity as needed */
+  transform: translateY(-50%); /* Center the pseudo-element vertically */
+  z-index: 0; /* Ensure the pseudo-element is behind the text */
+}
+.frontcolor{
+  z-index: 5;
+}
+.no-padding-margin {
+  padding: 0 !important; /* Remove all padding */
+  margin: 0 !important; /* Remove all margin */
+}
+.backcolor{
+  position: relative;
+}
+
+.scriptingcolor{
+  margin-left: 0;
+  padding-left: 0;
+  background-color: #007bff;
+  
+}
+
+
+.cprogress {
+    animation: cprogress 2s ease-in-out forwards;
+}
+    
+@keyframes cprogress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 70%;
+    }
+}
+.cplusprogress {
+    animation: cplusprogress 2s ease-in-out forwards;
+}
+    
+@keyframes cplusprogress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 60%;
+    }
+}
+.pythonprogress {
+    animation: pythonprogress 2s ease-in-out forwards;
+}
+    
+@keyframes pythonprogress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 60%;
+    }
+}
+.htmlprogress {
+    animation: htmlprogress 2s ease-in-out forwards;
+}
+    
+@keyframes htmlprogress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 95%;
+    }
+}
+.cssprogress {
+    animation: cssprogress 2s ease-in-out forwards;
+}
+    
+@keyframes cssprogress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 90%;
+    }
+}
+.jsprogress {
+    animation: jsprogress 2s ease-in-out forwards;
+}
+    
+@keyframes jsprogress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 70%;
+    }
+}
+.btsprogress {
+    animation: btsprogress 2s ease-in-out forwards;
+}
+    
+@keyframes btsprogress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 80%;
+    }
+}
+
+/* Hover underline effect */
+.hover-underline {
+  position: relative;
+  display: inline-block;
+  color: #333;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 25%; /* Default width */
+  height: 4px;
+  bottom: -8px;
+  left: 0;
+  background: #007bff; /* Bootstrap primary color */
+  transition: width 0.5s ease;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+  /* timeline */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Use a light background color */
+  margin: 0;
+  padding: 0;
+  border: 2px solid grey;
+}
+
+.timeline {
+  position: relative;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50px; /* Adjust this value for timeline position */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #6c757d; /* Use secondary color for the timeline */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 90px; /* Adjust this value for spacing */
+}
+
+.timeline-date {
+  position: absolute;
+  left: 30px; /* Align the date with the timeline line */
+  top: 5px; /* Adjusted position 5 pixels up */
+  padding: 0.5rem;
+  border: 2px solid #007bff; /* Use primary color for date border */
+  border-radius: 5px;
+  background-color: white;
+  color: #007bff; /* Use primary color for date text */
+  font-weight: bold;
+  width: 60px; /* Fixed width for consistent layout */
+  text-align: center; /* Center align the text */
+}
+
+.timeline-content {
+  padding: 0.5rem 1rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 30px; /* Add margin to create space between the date and content */
+  color: #343a40; /* Use dark text color for content */
+}
+
+.timeline-content h4 {
+  color: #007bff; /* Use primary color for headings */
+  font-weight: bold; /* Make job titles bold */
+}
+    
+
+          /* footer */
+
+
+.footer a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+.footer a:hover {
+  color: #ffc107; /* Change to your desired hover color */
+}
+
+.footer {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 20px 0;
+}
+
+.footer a:hover {
+  color: #ffc107; /* Change to your desired hover color */
+}
+
+.fab{
+  font-size: xx-large;
+}
+.footertext{
+  letter-spacing: 4px;
+}

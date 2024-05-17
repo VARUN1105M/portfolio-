@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    font-family:  "Poppins", sans-serif;
+}
+.topper:hover{
+    background-color: rgb(10, 111, 228);
+    color: white;
+}
+.content{
+    margin-bottom: 0px;
+    margin: 10vh;
+    text-align: center;
+}
+.container-img{
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+h5{
+    letter-spacing: 4px;
+}
+h1{
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.imagevector{
+    margin-top: 20px;
+}
+.content2{
+    margin-top: 0;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+.h1 h5{
+    margin: 10px;
+    letter-spacing: 2px;
+    
+}
+.img1{
+    max-width: 100px;
+}
+
+.grid2{
+    margin: -30vh;
+    background: white;
+    border: 1px solid rgb(139, 139, 139);
+    border-radius: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row div{
+    color: rgb(53, 53, 53);
+}
+
+/* Hover underline effect */
+.hover-underline {
+    position: relative;
+    display: inline-block;
+    color: #333;
+}
+  
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 25%; /* Default width */
+    height: 4px;
+    bottom: -5px;
+    left: 0;
+    background: #007bff; /* Bootstrap primary color */
+    transition: width 0.5s ease;
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+          /* footer */
+
+
+
+.footer a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+.footer a:hover {
+  color: #ffc107; /* Change to your desired hover color */
+}
+
+.footer {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 20px 0;
+}
+
+.footer a:hover {
+  color: #ffc107; /* Change to your desired hover color */
+}
+
+.fab{
+  font-size: xx-large;
+}
+.footertext{
+  letter-spacing: 4px;
+}
